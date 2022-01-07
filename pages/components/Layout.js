@@ -11,7 +11,9 @@ export default function Layout({ children }) {
       <title>PokemonNext</title>
     </Head>
       <NavBar />
-      <main>{children}</main>
+        <main className="main-container">
+          {children}
+        </main>
       <Footer />
     </>
   );
