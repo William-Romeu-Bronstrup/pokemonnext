@@ -1,8 +1,9 @@
 
 export const getStaticPaths = async () => {
   const api = 'https://pokeapi.co/api/v2/pokemon/';
+  const max = 251;
 
-  const res = await fetch(`${api}`);
+  const res = await fetch(`${api}?limit=${max}`);
   const data = await res.json();
 
   //params
